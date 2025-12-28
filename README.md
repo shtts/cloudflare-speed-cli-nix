@@ -1,5 +1,5 @@
 # cloudflare-speed-cli-nix
-A Nix flake for **Tomu**, A CLI for internet speed test via cloudflare.
+A Nix flake for **cloudflare-speed-cli**, A CLI for internet speed test via cloudflare.
 Original upstream source: [kavehtehrani/cloudflare-speed-cli](https://github.com/kavehtehrani/cloudflare-speed-cli)
 
 > [!IMPORTANT]
@@ -73,7 +73,7 @@ nix shell github:shtts/cloudflare-speed-cli-nix
     pkgs.git
     pkgs.vim
     
-    # Install Tomu
+    # Install cloudflare-speed-cli
     inputs.cloudflare-speed-cli-nix.packages.${pkgs.system}.default
   ];
 }
@@ -86,7 +86,7 @@ nix shell github:shtts/cloudflare-speed-cli-nix
 
 {
   home.packages = [
-    # Install Tomu
+    # Install cloudflare-speed-cli
     inputs.cloudflare-speed-cli-nix.packages.${pkgs.system}.default
   ];
 }
