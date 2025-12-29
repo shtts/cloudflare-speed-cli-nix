@@ -8,16 +8,16 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "cloudflare-speed-cli";
-  version = "0.2.0";
+  version = "0.3.0";
 
   src = fetchFromGitHub {
     owner = "kavehtehrani";
     repo = "cloudflare-speed-cli";
     rev = "v${version}";
-    hash = "sha256-cskNER3GpBxZbORGnTsXL002VqDdkNos8dOovaThp78=";
+    hash = "sha256-2LmdA1J2Tlsf0w6VbNLw+ZTsKkPFl1xmCV5o13/F96E=";
   };
 
-  cargoHash = "sha256-kOtcxOtSZ+iVJcUxr4fXeojsIK2gGmkAZRTXxU3VQMQ=";
+  cargoHash = "sha256-0ho55vKrUdM2DsA3ruClYPmZRp83zeOEoitEHScKy0A=";
 
   buildInputs = lib.optionals stdenv.isDarwin [
     darwin.apple_sdk.frameworks.AppKit
